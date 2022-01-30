@@ -1,8 +1,4 @@
-import {
-  InformationCircleIcon,
-  ChartBarIcon,
-  SunIcon,
-} from '@heroicons/react/outline'
+import { ChartBarIcon } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
@@ -14,7 +10,6 @@ import {
   WORDLE_TITLE,
   WIN_MESSAGES,
   GAME_COPIED_MESSAGE,
-  ABOUT_GAME_MESSAGE,
   NOT_ENOUGH_LETTERS_MESSAGE,
   WORD_NOT_FOUND_MESSAGE,
   CORRECT_WORD_MESSAGE,
