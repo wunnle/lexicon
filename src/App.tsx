@@ -1,4 +1,4 @@
-import { ChartBarIcon } from '@heroicons/react/outline'
+import { ChartBarIcon, InformationCircleIcon } from '@heroicons/react/outline'
 import { useState, useEffect } from 'react'
 import { Alert } from './components/alerts/Alert'
 import { Grid } from './components/grid/Grid'
@@ -141,10 +141,10 @@ function App() {
           {WORDLE_TITLE} - {`${gameDayCount}`.padStart(3, '0')}
         </h1>
         <p></p>
-        {/* <InformationCircleIcon
+        <InformationCircleIcon
           className="h-6 w-6 cursor-pointer dark:stroke-white"
           onClick={() => setIsInfoModalOpen(true)}
-        /> */}
+        />
         <ChartBarIcon
           className="h-6 w-6 cursor-pointer dark:stroke-white"
           onClick={() => setIsStatsModalOpen(true)}
