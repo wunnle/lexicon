@@ -2396,5 +2396,8 @@ export const WORDS = [
   "CUBUK",
   "CREEP",
   "TATIL",
-  "DAYIZ"
+  "DAYIZ",
+  "GONZO",
+  "TAVUK",
+  "EKMEK"
 ]
