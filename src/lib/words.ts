@@ -1,5 +1,10 @@
 import { WORDS } from '../constants/wordlist'
 import { VALIDGUESSES } from '../constants/validGuesses'
+import dayjs from 'dayjs'
+
+
+const gameStartDate = dayjs('2022-01-30')
+
 
 export const isWordInWordList = (word: string) => {
   return (
@@ -14,17 +19,14 @@ export const isWinningWord = (word: string) => {
 
 export const getWordOfDay = () => {
   // January 1, 2022 Game Epoch
-  const epochMs = new Date('January 1, 2022 00:00:00').valueOf()
   const now = Date.now()
-  const msInDay = 86400000
-  const index = Math.floor((now - epochMs) / msInDay)
-  const nextday = (index + 1) * msInDay + epochMs
+
+  const daysPassed = dayjs().diff(gameStartDate, 'day')
 
   return {
-    solution: WORDS[index % WORDS.length].toUpperCase(),
-    solutionIndex: index,
-    tomorrow: nextday,
+    solution: WORDS[daysPassed],
+    solutionIndex: daysPassed
   }
 }
 
-export const { solution, solutionIndex, tomorrow } = getWordOfDay()
+export const { solution, solutionIndex } = getWordOfDay()

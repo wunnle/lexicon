@@ -6,6 +6,7 @@ type Props = {
 }
 
 export const CompletedRow = ({ guess }: Props) => {
+
   const statuses = getGuessStatuses(guess)
 
   return (
