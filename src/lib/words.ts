@@ -3,7 +3,11 @@ import { VALIDGUESSES } from '../constants/validGuesses'
 import dayjs from 'dayjs'
 
 
-const gameStartDate = dayjs('2022-01-30')
+export const gameStartDate = dayjs('2022-01-30')
+
+const daysPassed = dayjs().diff(gameStartDate, 'day')
+
+export const gameDayCount = daysPassed + 1
 
 export const isWordInWordList = (word: string) => {
   return (
@@ -17,8 +21,6 @@ export const isWinningWord = (word: string) => {
 }
 
 export const getWordOfDay = () => {
-  const daysPassed = dayjs().diff(gameStartDate, 'day')
-
   return {
     solution: WORDS[daysPassed],
     solutionIndex: daysPassed
