@@ -1993,5 +1993,8 @@ export const WORDS = [
   "DAYIZ",
   "GONZO",
   "TAVUK",
-  "EKMEK"
+  "EKMEK",
+  "AYHAN",
+  "AYTEN",
+  "SENUA"
 ]
