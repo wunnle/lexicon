@@ -9,11 +9,10 @@ export const WORDS = [
   "TİLKİ",
   "CEVAP",
   "SURAT",
+  "DEMEK",
   "DOĞRU",
   "TAVAN",
   "FAZLA",
-  "DEMEK",
-  "ACABA",
   "BENİM",
   "ETTİN",
   "WHICH",
@@ -1992,5 +1991,7 @@ export const WORDS = [
   "AYTEN",
   "SENUA",
   "IRMAK",
-  "SENUA"
+  "SENUA",
+  "DEMEK",
+  "ACABA"
 ]
